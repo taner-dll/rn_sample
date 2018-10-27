@@ -1,17 +1,16 @@
 import React from 'react';
-import {Container, Header, Content, Accordion, Left, Button, Icon, Body, Title, Right} from 'native-base';
+import {Container, Header, Content, CardItem,Card, Thumbnail, Image,
+    Left, Button, Icon, Body, Title, Right, Text} from 'native-base';
 import {StyleSheet} from "react-native";
 import {getStatusBarHeight} from "react-native-status-bar-height";
 import {NavigationActions} from 'react-navigation';
 
 
-const dataArray = [
-    {title: "First Element", content: "Lorem ipsum dolor sit amet"},
-    {title: "Second Element", content: "Lorem ipsum dolor sit amet"},
-    {title: "Third Element", content: "Lorem ipsum dolor sit amet"}
-];
-
 export default class ConsoleCommands extends React.Component {
+
+
+
+
     render() {
         return (
             <Container>
@@ -26,8 +25,51 @@ export default class ConsoleCommands extends React.Component {
                     </Body>
                     <Right/>
                 </Header>
-                <Content padder>
-                    <Accordion dataArray={dataArray} expanded={0}/>
+                <Content>
+                    <Card style={{flex: 0}}>
+                        <CardItem>
+                            <Left>
+                                <Icon name={'terminal'}/>
+                                <Body>
+                                <Text>bin\console doctrine:schema:validate</Text>
+                                <Text note>April 15, 2016</Text>
+                                </Body>
+                            </Left>
+                        </CardItem>
+                    </Card>
+                    <Card style={{flex: 0}}>
+                        <CardItem>
+                            <Left>
+                                <Icon name={'terminal'}/>
+                                <Body>
+                                <Text>bin\console doctrine:schema:validate</Text>
+                                <Text note>April 15, 2016</Text>
+                                </Body>
+                            </Left>
+                        </CardItem>
+                    </Card>
+                    <Card style={{flex: 0}}>
+                        <CardItem>
+                            <Left>
+                                <Icon name={'terminal'}/>
+                                <Body>
+                                <Text>bin\console doctrine:schema:validate</Text>
+                                <Text note>April 15, 2016</Text>
+                                </Body>
+                            </Left>
+                        </CardItem>
+                    </Card>
+                    <Card style={{flex: 0}}>
+                        <CardItem>
+                            <Left>
+                                <Icon name={'terminal'}/>
+                                <Body>
+                                <Text>bin\console doctrine:schema:validate</Text>
+                                <Text note>April 15, 2016</Text>
+                                </Body>
+                            </Left>
+                        </CardItem>
+                    </Card>
                 </Content>
             </Container>
         );

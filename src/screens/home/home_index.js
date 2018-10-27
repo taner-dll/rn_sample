@@ -66,7 +66,7 @@ class HomeScreen extends React.Component {
                                 </CardItem>
                                 <CardItem bordered>
                                     <Left>
-                                        <Text>Make Commands a</Text>
+                                        <Text>Make Commands</Text>
                                     </Left>
                                     <Right>
                                         <Icon name="ios-arrow-forward"/>
