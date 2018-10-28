@@ -27,10 +27,7 @@ import platform from "../../../native-base-theme/variables/platform";
 
 class HomeScreen extends React.Component {
 
-    constructor(props) {
-        super(props);
 
-    }
 
     render() {
         return (
