@@ -3,7 +3,7 @@ import {
     Container, Header, Content, CardItem, Card, Thumbnail, Image,
     Left, Button, Icon, Body, Title, Right, Text
 } from 'native-base';
-import {ScrollView, StyleSheet} from "react-native";
+import {ScrollView, StyleSheet, View} from "react-native";
 import {getStatusBarHeight} from "react-native-status-bar-height";
 import {NavigationActions} from 'react-navigation';
 
@@ -25,121 +25,53 @@ export default class ConsoleCommands extends React.Component {
                     </Body>
                     <Right/>
                 </Header>
-                <Content>
+
+                <Content style={styles.content}>
 
                     <ScrollView
                         behaviour="height"
                         keyboardVerticalOffset={64}
                         style={{marginTop: '5%', flex: 1}}
                     >
-
                         <Card>
-                            <CardItem header>
-                                <Text>Caches</Text>
+                            <CardItem bordered>
+                                <Body>
+                                <Text>bin/console cache:clear</Text>
+                                <Text style={{color: 'green'}} note>clear the cached information</Text>
+                                </Body>
                             </CardItem>
 
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:clear</Text>
-                                    <Text note>Clear the cached information.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:warmup</Text>
-                                    <Text note>Warms up an empty cache.</Text>
-                                    </Body>
-                                </Left>
+                            <CardItem bordered>
+                                <Body>
+                                <Text>bin/console cache:clear</Text>
+                                <Text style={{color: 'green'}} note>clear the cached information</Text>
+                                </Body>
                             </CardItem>
                         </Card>
 
                         <Card>
-                            <CardItem header>
-                                <Text>NativeBase</Text>
+                            <CardItem bordered>
+                                <Body>
+                                <Text>bin/console cache:clear</Text>
+                                <Text style={{color: 'green'}} note>clear the cached information</Text>
+                                </Body>
                             </CardItem>
 
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:clear</Text>
-                                    <Text note>Clear the cached information.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:warmup</Text>
-                                    <Text note>Warms up an empty cache.</Text>
-                                    </Body>
-                                </Left>
+                            <CardItem bordered>
+                                <Body>
+                                <Text>bin/console cache:clear</Text>
+                                <Text style={{color: 'green'}} note>clear the cached information</Text>
+                                </Body>
                             </CardItem>
                         </Card>
 
-                        <Card>
-                            <CardItem header>
-                                <Text>NativeBase</Text>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:clear</Text>
-                                    <Text note>Clear the cached information.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:warmup</Text>
-                                    <Text note>Warms up an empty cache.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-                        </Card>
-
-                        <Card>
-                            <CardItem header>
-                                <Text>NativeBase</Text>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:clear</Text>
-                                    <Text note>Clear the cached information.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-
-                            <CardItem>
-                                <Left>
-                                    <Icon type={"FontAwesome"} active name="terminal"/>
-                                    <Body>
-                                    <Text>php bin/console cache:warmup</Text>
-                                    <Text note>Warms up an empty cache.</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-                        </Card>
+                        
 
                     </ScrollView>
 
                 </Content>
+
+
             </Container>
         );
     }

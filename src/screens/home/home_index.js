@@ -31,7 +31,7 @@ class HomeScreen extends React.Component {
 
     render() {
         return (
-            <StyleProvider style={getTheme(platform)}>
+            <StyleProvider style={getTheme(material)}>
                 <Container>
                     <Header style={styles.header}>
                         <Left>
