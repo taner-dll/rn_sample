@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, ScrollView} from 'react-native';
+import {Text, ScrollView} from 'react-native';
 import {
     Container, Content, Body, Title, Header, Left, Right,
     Icon, Button, FooterTab, Footer, StyleProvider, Card, CardItem
@@ -25,7 +25,9 @@ import material from "../../../native-base-theme/variables/material";
 import commonColor from "../../../native-base-theme/variables/commonColor";
 import platform from "../../../native-base-theme/variables/platform";
 
-class HomeScreen extends React.Component {
+import styles from "../style";
+
+export default class HomeScreen extends React.Component {
 
 
 
@@ -53,9 +55,9 @@ class HomeScreen extends React.Component {
                             >
 
                                 <CardItem bordered button
-                                          onPress={() => this.props.navigation.navigate('ConsoleCommands')}>
+                                          onPress={() => this.props.navigation.navigate('GeneralCommands')}>
                                     <Left>
-                                        <Text>Console Commands</Text>
+                                        <Text>General Commands</Text>
                                     </Left>
                                     <Right>
                                         <Icon name="ios-arrow-forward"/>
@@ -115,18 +117,3 @@ class HomeScreen extends React.Component {
         );
     }
 }
-
-export default HomeScreen;
-
-
-const styles = StyleSheet.create({
-
-    header: {
-        paddingTop: getStatusBarHeight(),
-        height: 54 + getStatusBarHeight(),
-    },
-    content: {
-        backgroundColor: '#FFFFFF'
-    }
-});
-
