@@ -10,6 +10,7 @@ import AboutScreen from "./src/screens/about/about_index";
 import logo from "./assets/logo.png";
 
 import GeneralCommands from "./src/screens/commands/general_commands";
+import MakeCommands from "./src/screens/commands/make_commands";
 
 
 
@@ -76,7 +77,8 @@ const DrawerStack = createDrawerNavigator(
     {
         Home: HomeScreen,
         About: AboutScreen,
-        GeneralCommands: GeneralCommands
+        GeneralCommands: GeneralCommands,
+        MakeCommands: MakeCommands
     },
     {
         contentComponent: CustomDrawerContentComponent

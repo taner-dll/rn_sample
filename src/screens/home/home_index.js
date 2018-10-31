@@ -29,8 +29,6 @@ import styles from "../style";
 
 export default class HomeScreen extends React.Component {
 
-
-
     render() {
         return (
             <StyleProvider style={getTheme(material)}>
@@ -63,7 +61,8 @@ export default class HomeScreen extends React.Component {
                                         <Icon name="ios-arrow-forward"/>
                                     </Right>
                                 </CardItem>
-                                <CardItem bordered>
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('MakeCommands')}>
                                     <Left>
                                         <Text>Make Commands</Text>
                                     </Left>
@@ -75,7 +74,6 @@ export default class HomeScreen extends React.Component {
                                     <Left>
                                         <Text>Doctrine Commands</Text>
                                     </Left>
-
                                     <Right>
                                         <Icon name="ios-arrow-forward"/>
                                     </Right>
