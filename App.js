@@ -11,6 +11,8 @@ import logo from "./assets/logo.png";
 
 import GeneralCommands from "./src/screens/commands/general_commands";
 import MakeCommands from "./src/screens/commands/make_commands";
+import CacheCommands from "./src/screens/commands/cache_commands";
+import DoctrineCommands from "./src/screens/commands/doctrine_commands";
 
 
 
@@ -78,7 +80,9 @@ const DrawerStack = createDrawerNavigator(
         Home: HomeScreen,
         About: AboutScreen,
         GeneralCommands: GeneralCommands,
-        MakeCommands: MakeCommands
+        MakeCommands: MakeCommands,
+        DoctrineCommands: DoctrineCommands,
+        CacheCommands: CacheCommands
     },
     {
         contentComponent: CustomDrawerContentComponent

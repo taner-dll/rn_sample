@@ -64,13 +64,23 @@ export default class HomeScreen extends React.Component {
                                 <CardItem bordered button
                                           onPress={() => this.props.navigation.navigate('MakeCommands')}>
                                     <Left>
-                                        <Text>Make Commands</Text>
+                                        <Text>The Symfony MakerBundle</Text>
                                     </Left>
                                     <Right>
                                         <Icon name="ios-arrow-forward"/>
                                     </Right>
                                 </CardItem>
-                                <CardItem bordered>
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('CacheCommands')}>
+                                    <Left>
+                                        <Text>Doctrine Cache Commands</Text>
+                                    </Left>
+                                    <Right>
+                                        <Icon name="ios-arrow-forward"/>
+                                    </Right>
+                                </CardItem>
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('DoctrineCommands')}>
                                     <Left>
                                         <Text>Doctrine Commands</Text>
                                     </Left>

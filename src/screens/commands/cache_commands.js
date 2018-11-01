@@ -8,7 +8,7 @@ import {NavigationActions} from 'react-navigation';
 import styles from '../style';
 
 
-export default class GeneralCommands extends React.Component {
+export default class CacheCommands extends React.Component {
 
 
     render() {
@@ -21,7 +21,7 @@ export default class GeneralCommands extends React.Component {
                         </Button>
                     </Left>
                     <Body style={{flex: 3}}>
-                    <Title>General Commands</Title>
+                    <Title>Cache Commands</Title>
                     </Body>
                     <Right/>
                 </Header>
@@ -36,80 +36,86 @@ export default class GeneralCommands extends React.Component {
                         <Card>
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console about</Text>
-                                <Text style={{color: '#6F9B32'}} note>display information about the current project</Text>
+                                <Text>bin\console doctrine:cache:clear</Text>
+                                <Text style={{color: '#6F9B32'}} note>flush a given cache</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console help [command]</Text>
-                                <Text style={{color: '#6F9B32'}} note>display help for a command</Text>
+                                <Text>bin\console doctrine:cache:flush</Text>
+                                <Text style={{color: '#6F9B32'}} note>same as [cache:clear]</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console cache:clear</Text>
-                                <Text style={{color: '#6F9B32'}} note>clear the cached information</Text>
+                                <Text>bin\console doctrine:cache:clear-collection-region</Text>
+                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache collection region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console debug:router</Text>
-                                <Text style={{color: '#6F9B32'}} note>display current routes</Text>
+                                <Text>bin\console doctrine:cache:clear-entity-region</Text>
+                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache entity region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console make:entity --regenerate</Text>
-                                <Text style={{color: '#6F9B32'}} note>generate all the getter/setter methods
-                                    of existing entity</Text>
+                                <Text>bin\console doctrine:cache:clear-metadata</Text>
+                                <Text style={{color: '#6F9B32'}} note>clears all metadata cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console doctrine:schema:validate</Text>
-                                <Text style={{color: '#6F9B32'}} note>validate the mapping files</Text>
+                                <Text>bin\console doctrine:cache:clear-query</Text>
+                                <Text style={{color: '#6F9B32'}} note>clears all query cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console doctrine:schema:update</Text>
-                                <Text style={{color: '#6F9B32'}} note>update the current mapping metadata</Text>
+                                <Text>bin\console doctrine:cache:clear-query-region</Text>
+                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache query region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console doctrine:migrations:diff</Text>
-                                <Text style={{color: '#6F9B32'}} note>generate a migration by comparing your current
-                                    database</Text>
+                                <Text>bin\console doctrine:cache:clear-result</Text>
+                                <Text style={{color: '#6F9B32'}} note>clears result cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console doctrine:migrations:migrate</Text>
-                                <Text style={{color: '#6F9B32'}} note>execute a migration to a specified version or
-                                the latest avaible version</Text>
+                                <Text>bin\console doctrine:cache:contains</Text>
+                                <Text style={{color: '#6F9B32'}} note>check if a cache entry exists</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
-                                <Text>bin\console list</Text>
-                                <Text style={{color: '#6F9B32'}} note>list commands</Text>
+                                <Text>bin\console doctrine:cache:delete</Text>
+                                <Text style={{color: '#6F9B32'}} note>delete a cache entry</Text>
                                 </Body>
                             </CardItem>
+
+                            <CardItem bordered>
+                                <Body>
+                                <Text>bin\console doctrine:cache:stats</Text>
+                                <Text style={{color: '#6F9B32'}} note>gets stats on a given cache provider</Text>
+                                </Body>
+                            </CardItem>
+
+
+
 
 
                         </Card>
-
 
                     </ScrollView>
 
