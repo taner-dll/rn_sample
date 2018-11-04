@@ -37,35 +37,35 @@ export default class GeneralCommands extends React.Component {
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console about</Text>
-                                <Text style={{color: '#6F9B32'}} note>display information about the current project</Text>
+                                <Text style={{color: 'purple'}} note>display information about the current project</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console help [command]</Text>
-                                <Text style={{color: '#6F9B32'}} note>display help for a command</Text>
+                                <Text style={{color: 'purple'}} note>display help for a command</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console cache:clear</Text>
-                                <Text style={{color: '#6F9B32'}} note>clear the cached information</Text>
+                                <Text style={{color: 'purple'}} note>clear the cached information</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console debug:router</Text>
-                                <Text style={{color: '#6F9B32'}} note>display current routes</Text>
+                                <Text style={{color: 'purple'}} note>display current routes</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console make:entity --regenerate</Text>
-                                <Text style={{color: '#6F9B32'}} note>generate all the getter/setter methods
+                                <Text style={{color: 'purple'}} note>generate all the getter/setter methods
                                     of existing entity</Text>
                                 </Body>
                             </CardItem>
@@ -73,21 +73,21 @@ export default class GeneralCommands extends React.Component {
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:schema:validate</Text>
-                                <Text style={{color: '#6F9B32'}} note>validate the mapping files</Text>
+                                <Text style={{color: 'purple'}} note>validate the mapping files</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:schema:update</Text>
-                                <Text style={{color: '#6F9B32'}} note>update the current mapping metadata</Text>
+                                <Text style={{color: 'purple'}} note>update the current mapping metadata</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:migrations:diff</Text>
-                                <Text style={{color: '#6F9B32'}} note>generate a migration by comparing your current
+                                <Text style={{color: 'purple'}} note>generate a migration by comparing your current
                                     database</Text>
                                 </Body>
                             </CardItem>
@@ -95,7 +95,7 @@ export default class GeneralCommands extends React.Component {
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:migrations:migrate</Text>
-                                <Text style={{color: '#6F9B32'}} note>execute a migration to a specified version or
+                                <Text style={{color: 'purple'}} note>execute a migration to a specified version or
                                 the latest avaible version</Text>
                                 </Body>
                             </CardItem>
@@ -103,7 +103,7 @@ export default class GeneralCommands extends React.Component {
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console list</Text>
-                                <Text style={{color: '#6F9B32'}} note>list commands</Text>
+                                <Text style={{color: 'purple'}} note>list commands</Text>
                                 </Body>
                             </CardItem>
 

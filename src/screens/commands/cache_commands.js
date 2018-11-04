@@ -37,82 +37,79 @@ export default class CacheCommands extends React.Component {
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear</Text>
-                                <Text style={{color: '#6F9B32'}} note>flush a given cache</Text>
+                                <Text style={{color: 'purple'}} note>flush a given cache</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:flush</Text>
-                                <Text style={{color: '#6F9B32'}} note>same as [cache:clear]</Text>
+                                <Text style={{color: 'purple'}} note>same as [cache:clear]</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-collection-region</Text>
-                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache collection region</Text>
+                                <Text style={{color: 'purple'}} note>clear a second-level cache collection region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-entity-region</Text>
-                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache entity region</Text>
+                                <Text style={{color: 'purple'}} note>clear a second-level cache entity region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-metadata</Text>
-                                <Text style={{color: '#6F9B32'}} note>clears all metadata cache for an entity manager</Text>
+                                <Text style={{color: 'purple'}} note>clears all metadata cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-query</Text>
-                                <Text style={{color: '#6F9B32'}} note>clears all query cache for an entity manager</Text>
+                                <Text style={{color: 'purple'}} note>clears all query cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-query-region</Text>
-                                <Text style={{color: '#6F9B32'}} note>clear a second-level cache query region</Text>
+                                <Text style={{color: 'purple'}} note>clear a second-level cache query region</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:clear-result</Text>
-                                <Text style={{color: '#6F9B32'}} note>clears result cache for an entity manager</Text>
+                                <Text style={{color: 'purple'}} note>clears result cache for an entity manager</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:contains</Text>
-                                <Text style={{color: '#6F9B32'}} note>check if a cache entry exists</Text>
+                                <Text style={{color: 'purple'}} note>check if a cache entry exists</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:delete</Text>
-                                <Text style={{color: '#6F9B32'}} note>delete a cache entry</Text>
+                                <Text style={{color: 'purple'}} note>delete a cache entry</Text>
                                 </Body>
                             </CardItem>
 
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:cache:stats</Text>
-                                <Text style={{color: '#6F9B32'}} note>gets stats on a given cache provider</Text>
+                                <Text style={{color: 'purple'}} note>gets stats on a given cache provider</Text>
                                 </Body>
                             </CardItem>
-
-
-
 
 
                         </Card>
