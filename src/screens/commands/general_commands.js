@@ -33,35 +33,47 @@ export default class GeneralCommands extends React.Component {
                         keyboardVerticalOffset={64}
                         style={{marginTop: '0%', flex: 1}}
                     >
+
+
                         <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console about</Text>
-                                <Text style={{color: 'purple'}} note>display information about the current project</Text>
+                                <Text style={{color: 'purple'}} note>display information about the current
+                                    project</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console help [command]</Text>
                                 <Text style={{color: 'purple'}} note>display help for a command</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console cache:clear</Text>
                                 <Text style={{color: 'purple'}} note>clear the cached information</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console debug:router</Text>
                                 <Text style={{color: 'purple'}} note>display current routes</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console make:entity --regenerate</Text>
@@ -69,21 +81,27 @@ export default class GeneralCommands extends React.Component {
                                     of existing entity</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:schema:validate</Text>
                                 <Text style={{color: 'purple'}} note>validate the mapping files</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:schema:update</Text>
                                 <Text style={{color: 'purple'}} note>update the current mapping metadata</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:migrations:diff</Text>
@@ -91,23 +109,25 @@ export default class GeneralCommands extends React.Component {
                                     database</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console doctrine:migrations:migrate</Text>
                                 <Text style={{color: 'purple'}} note>execute a migration to a specified version or
-                                the latest avaible version</Text>
+                                    the latest avaible version</Text>
                                 </Body>
                             </CardItem>
+                        </Card>
 
+                        <Card>
                             <CardItem bordered>
                                 <Body>
                                 <Text>bin\console list</Text>
                                 <Text style={{color: 'purple'}} note>list commands</Text>
                                 </Body>
                             </CardItem>
-
-
                         </Card>
 
 

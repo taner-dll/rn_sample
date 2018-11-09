@@ -11,6 +11,6 @@ export default StyleSheet.create({
         height: 54 + getStatusBarHeight(),
     },
     content: {
-        backgroundColor: '#FFFFFF'
+        backgroundColor: '#eeeeee'
     }
 });

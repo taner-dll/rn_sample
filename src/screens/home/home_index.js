@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, ScrollView} from 'react-native';
 import {
-    Container, Content, Body, Title, Header, Left, Right,
+    Container, Content, Body, Title, Header, Left, Right, Thumbnail,
     Icon, Button, FooterTab, Footer, StyleProvider, Card, CardItem
 } from 'native-base';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
@@ -26,6 +26,8 @@ import commonColor from "../../../native-base-theme/variables/commonColor";
 import platform from "../../../native-base-theme/variables/platform";
 
 import styles from "../style";
+import symfonyLogo from "../../../assets/symfony.png";
+import doctrineLogo from "../../../assets/doctrine.png";
 
 export default class HomeScreen extends React.Component {
 
@@ -45,58 +47,82 @@ export default class HomeScreen extends React.Component {
                         <Right/>
                     </Header>
                     <Content style={styles.content}>
-                        <Card>
-                            <ScrollView
-                                behaviour="height"
-                                keyboardVerticalOffset={64}
-                                style={{marginTop: '5%', flex: 1}}
-                            >
 
+                        <ScrollView
+                            behaviour="height"
+                            keyboardVerticalOffset={64}
+                            style={{marginTop: '5%', flex: 1}}
+                        >
+
+                            <Card>
                                 <CardItem bordered button
                                           onPress={() => this.props.navigation.navigate('GeneralCommands')}>
                                     <Left>
-                                        <Text>General Commands</Text>
-                                    </Left>
-                                    <Right>
-                                        <Icon name="ios-arrow-forward"/>
-                                    </Right>
-                                </CardItem>
-                                <CardItem bordered button
-                                          onPress={() => this.props.navigation.navigate('MakeCommands')}>
-                                    <Left>
-                                        <Text>The Symfony MakerBundle</Text>
-                                    </Left>
-                                    <Right>
-                                        <Icon name="ios-arrow-forward"/>
-                                    </Right>
-                                </CardItem>
-                                <CardItem bordered button
-                                          onPress={() => this.props.navigation.navigate('CacheCommands')}>
-                                    <Left>
-                                        <Text>Doctrine Cache Commands</Text>
-                                    </Left>
-                                    <Right>
-                                        <Icon name="ios-arrow-forward"/>
-                                    </Right>
-                                </CardItem>
-                                <CardItem bordered button
-                                          onPress={() => this.props.navigation.navigate('DoctrineCommands')}>
-                                    <Left>
-                                        <Text>Doctrine Commands</Text>
-                                    </Left>
-                                    <Right>
-                                        <Icon name="ios-arrow-forward"/>
-                                    </Right>
-                                </CardItem>
-                                <CardItem bordered>
-                                    <Left>
-                                        <Text>ORM Annotations</Text>
+                                        <Thumbnail square small source={symfonyLogo} />
+                                        <Text style={{paddingLeft: 10}}>General Commands
+                                            <Text style={{color: 'grey', fontStyle: 'italic'}} note>{"\n"}
+                                                most used by community
+                                            </Text>
+                                        </Text>
                                     </Left>
 
                                     <Right>
+                                        <Icon name="ios-arrow-forward" />
+                                    </Right>
+                                </CardItem>
+
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('MakeCommands')}>
+                                    <Left>
+                                        <Thumbnail square small source={symfonyLogo} />
+                                        <Text style={{paddingLeft: 10}}>The Symfony MakerBundle
+                                            <Text style={{color: 'grey', fontStyle: 'italic'}} note>{"\n"}
+                                                create controllers and more
+                                            </Text>
+                                        </Text>
+                                    </Left>
+                                    <Right>
                                         <Icon name="ios-arrow-forward"/>
                                     </Right>
                                 </CardItem>
+                            </Card>
+
+                            <Card>
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('CacheCommands')}>
+                                    <Left>
+                                        <Thumbnail square small source={doctrineLogo} />
+                                        <Text style={{paddingLeft: 10}}>Doctrine Cache Commands</Text>
+                                    </Left>
+                                    <Right>
+                                        <Icon name="ios-arrow-forward"/>
+                                    </Right>
+                                </CardItem>
+
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('DoctrineCommands')}>
+                                    <Left>
+                                        <Thumbnail square small source={doctrineLogo} />
+                                        <Text style={{paddingLeft: 10}}>General Doctrine Commands</Text>
+                                    </Left>
+                                    <Right>
+                                        <Icon name="ios-arrow-forward"/>
+                                    </Right>
+                                </CardItem>
+
+                                <CardItem bordered button
+                                          onPress={() => this.props.navigation.navigate('DoctrineCommands')}>
+                                    <Left>
+                                        <Thumbnail square small source={doctrineLogo} />
+                                        <Text style={{paddingLeft: 10}}>ORM Annotations</Text>
+                                    </Left>
+                                    <Right>
+                                        <Icon name="ios-arrow-forward"/>
+                                    </Right>
+                                </CardItem>
+                            </Card>
+
+                            <Card>
                                 <CardItem bordered>
                                     <Left>
                                         <Text>Create Command</Text>
@@ -106,8 +132,10 @@ export default class HomeScreen extends React.Component {
                                         <Icon name="ios-arrow-forward"/>
                                     </Right>
                                 </CardItem>
-                            </ScrollView>
-                        </Card>
+                            </Card>
+
+                        </ScrollView>
+
                     </Content>
 
                     {/*
